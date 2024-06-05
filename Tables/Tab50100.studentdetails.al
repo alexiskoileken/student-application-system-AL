@@ -55,19 +55,19 @@ table 50100 "student details"
         {
             Caption = ' P.O BOX ';
         }
-        field(8; "Email Address "; Code[20])
+        field(8; "Email Address "; Code[50])
         {
             Caption = 'Email Address ';
         }
-        field(9; "Mobile Phone"; Integer)
+        field(9; "Mobile Phone"; Code[50])
         {
             Caption = 'Mobile Phone';
         }
-        field(10; City; Text[10])
+        field(10; City; Text[50])
         {
             Caption = 'City';
         }
-        field(11; "Name of the father"; Text[20])
+        field(11; "Name of the father"; Text[50])
         {
             Caption = 'Name of the father';
         }
@@ -75,7 +75,7 @@ table 50100 "student details"
         {
             Caption = 'Phone Number';
         }
-        field(13; Occupation; Text[10])
+        field(13; Occupation; Text[50])
         {
             Caption = 'Occupation';
         }
@@ -83,12 +83,12 @@ table 50100 "student details"
         {
             Caption = 'Deceased';
         }
-        field(15; "Name of the mother"; Text[20])
+        field(15; "Name of the mother"; Text[50])
         {
             Caption = 'Name of the mother';
         }
 
-        field(16; "Name of the Guardian"; Text[20])
+        field(16; "Name of the Guardian"; Text[50])
         {
             Caption = 'Name of the Guardian';
         }
