@@ -10,24 +10,31 @@ page 50101 "School system"
             group("student")
             {
                 Caption = 'student registration details';
-                action("students Details")
+                group("Students")
                 {
-                    RunObject = page "student registration details";
-                    ApplicationArea = All;
+                    caption = 'students applications';
+                    action("students Details")
+                    {
+                        RunObject = page "student registration details";
+                        ApplicationArea = All;
 
+                    }
+                    action("Student courses")
+                    {
+                        RunObject = page "Course table";
+                        ApplicationArea = ALL;
+                    }
                 }
-                action("Student courses")
-                {
-                    RunObject = page "Course table";
-                    ApplicationArea = ALL;
-                }
+
+            }
+            group(School)
+            {
+                Caption = 'school data';
                 action("Registered Students")
                 {
                     RunObject = page "Course Application List";
                     ApplicationArea = ALL;
                 }
-
-
             }
 
 
