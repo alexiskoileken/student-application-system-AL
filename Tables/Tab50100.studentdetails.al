@@ -100,10 +100,9 @@ table 50100 "student details"
             TableRelation = Course.CourseId;
         }
 
-        field(21; "Status"; Option)
+        field(21; "Status"; Enum status)
         {
-            Caption = 'status ';
-            OptionMembers = "Applied","Approved","Rejected";
+            Caption = 'status';
         }
         field(22; EnrolledCourses; Text[50])
         {
@@ -124,9 +123,11 @@ table 50100 "student details"
             Clustered = true;
         }
     }
-    trigger OnInsert()
+
     var
-        NoSeriesMgt: Codeunit "NoSeriesManagement";//creating a variable
+        Noseriesmgt: Codeunit "NoSeriesManagement";
+
+    trigger OnInsert()
     begin
         if "StudentId" = '' then begin
             NoSeriesMgt.InitSeries('SDN', "Noseries", 0D, "StudentId", "Noseries");

@@ -20,11 +20,9 @@ table 50102 ApplicationStatus
             Caption = 'CourseId';
             TableRelation = Course;
         }
-        field(4; Status; Option)
+        field(4; Status; enum status)
         {
-            Caption = 'Status';
-            OptionMembers = "Applied","Approved","Rejected";
-            InitValue = "Applied";
+            caption = 'Status';
 
         }
         field(5; Noseries; Code[20])

@@ -25,6 +25,10 @@ page 50101 "School system"
                         ApplicationArea = ALL;
                     }
                 }
+                group(approval)
+                {
+
+                }
 
             }
             group(School)

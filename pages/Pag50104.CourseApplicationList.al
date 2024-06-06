@@ -33,22 +33,5 @@ page 50104 "Course Application List"
             }
         }
     }
-    actions
-    {
-        area(processing)
-        {
-            action(ApproveApplication)
-            {
-                Caption = 'Approve Application';
-                ApplicationArea = All;
 
-                trigger OnAction()
-                var
-                    CourseMgt: Codeunit "Course Management";
-                begin
-                    CourseMgt.ApproveApplication(Rec."StudentId");
-                end;
-            }
-        }
-    }
 }
