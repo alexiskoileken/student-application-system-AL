@@ -1,3 +1,6 @@
+/// <summary>
+/// Page School system (ID 50101).
+/// </summary>
 page 50101 "School system"
 {
     ApplicationArea = All;
@@ -49,7 +52,6 @@ profile MyProfile
 {
     Description = 'Profile Display Name';
     RoleCenter = "School system";
-    Caption = 'MyProfile';
+    Caption = 'welcome ';
 
 }
-

@@ -1,9 +1,13 @@
+/// <summary>
+/// Page Students Detail Card (ID 50102).
+/// </summary>
 page 50102 "Students Detail Card"
 {
     ApplicationArea = All;
     Caption = 'Students Detail Card';
     PageType = Card;
     SourceTable = "student details";
+
 
     layout
     {
@@ -46,10 +50,22 @@ page 50102 "Students Detail Card"
                 field("Email Address "; Rec."Email Address ")
                 {
                     ToolTip = 'Specifies the value of the Email Address  field.', Comment = '%';
+                    trigger OnValidate()
+                    var
+                        StudentEmail: codeunit MyPublisher;
+                    begin
+                        StudentEmail.OnEmailAdd(Rec."Email Address ");
+                    end;
                 }
                 field("Mobile Phone"; Rec."Mobile Phone")
                 {
                     ToolTip = 'Specifies the value of the Mobile Phone field.', Comment = '%';
+                    trigger OnValidate()
+                    var
+                        StudentPhoneNumber: codeunit MyPublisher;
+                    begin
+                        StudentPhoneNumber.OnPhoneNumberAdd(rec."Mobile Phone");
+                    end;
                 }
                 field(City; Rec.City)
                 {
@@ -67,6 +83,12 @@ page 50102 "Students Detail Card"
                 field("Phone Number"; Rec."Phone Number")
                 {
                     ToolTip = 'Specifies the value of the Phone Number field.', Comment = '%';
+                    trigger OnValidate()
+                    var
+                        ParentPhoneNumber: Codeunit MyPublisher;
+                    begin
+                        ParentPhoneNumber.OnPhoneNumberAdd(rec."Phone Number");
+                    end;
                 }
                 field(Occupation; Rec.Occupation)
                 {
@@ -99,4 +121,5 @@ page 50102 "Students Detail Card"
             }
         }
     }
+
 }

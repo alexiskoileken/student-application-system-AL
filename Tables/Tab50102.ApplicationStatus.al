@@ -1,3 +1,6 @@
+/// <summary>
+/// Table ApplicationStatus (ID 50102).
+/// </summary>
 table 50102 ApplicationStatus
 {
     Caption = 'ApplicationStatus';

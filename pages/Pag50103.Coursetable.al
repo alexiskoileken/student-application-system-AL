@@ -1,3 +1,6 @@
+/// <summary>
+/// Page Course table (ID 50103).
+/// </summary>
 page 50103 "Course table"
 {
     ApplicationArea = All;

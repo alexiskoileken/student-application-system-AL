@@ -1,3 +1,6 @@
+/// <summary>
+/// Page Course Application List (ID 50104).
+/// </summary>
 page 50104 "Course Application List"
 {
     ApplicationArea = All;

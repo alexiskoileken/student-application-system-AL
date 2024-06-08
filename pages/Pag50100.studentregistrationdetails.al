@@ -1,3 +1,6 @@
+/// <summary>
+/// Page student registration details (ID 50100).
+/// </summary>
 page 50100 "student registration details"
 {
     ApplicationArea = All;

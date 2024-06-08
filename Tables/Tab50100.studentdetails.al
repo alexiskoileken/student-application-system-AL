@@ -1,3 +1,6 @@
+/// <summary>
+/// Table student details (ID 50100).
+/// </summary>
 table 50100 "student details"
 {
 

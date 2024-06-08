@@ -1,3 +1,6 @@
+/// <summary>
+/// Table Course (ID 50101).
+/// </summary>
 table 50101 Course
 {
     Caption = 'Course';
