@@ -58,11 +58,11 @@ table 50100 "student details"
         {
             Caption = ' P.O BOX ';
         }
-        field(8; "Email Address "; Code[50])
+        field(8; "Email"; Code[50])
         {
             Caption = 'Email Address ';
         }
-        field(9; "Mobile Phone"; Code[50])
+        field(9; "Mobile Phone"; Text[20])
         {
             Caption = 'Mobile Phone';
         }
@@ -74,7 +74,7 @@ table 50100 "student details"
         {
             Caption = 'Name of the father';
         }
-        field(12; "Phone Number"; code[50])
+        field(12; "Phone Number"; Text[20])
         {
             Caption = 'Phone Number';
         }

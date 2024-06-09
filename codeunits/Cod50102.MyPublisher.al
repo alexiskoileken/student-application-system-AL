@@ -6,7 +6,7 @@ codeunit 50102 MyPublisher
     end;
 
     [IntegrationEvent(false, false)]
-    procedure OnPhoneNumberAdd(code: code[50])
+    procedure OnPhoneNumberAdd(Text: Text[20])
     begin
     end;
 }

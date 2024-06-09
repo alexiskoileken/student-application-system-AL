@@ -47,14 +47,14 @@ page 50102 "Students Detail Card"
                 {
                     ToolTip = 'Specifies the value of the  P.O BOX  field.', Comment = '%';
                 }
-                field("Email Address "; Rec."Email Address ")
+                field("Email"; Rec."Email")
                 {
                     ToolTip = 'Specifies the value of the Email Address  field.', Comment = '%';
                     trigger OnValidate()
                     var
                         StudentEmail: codeunit MyPublisher;
                     begin
-                        StudentEmail.OnEmailAdd(Rec."Email Address ");
+                        StudentEmail.OnEmailAdd(Rec."Email");
                     end;
                 }
                 field("Mobile Phone"; Rec."Mobile Phone")

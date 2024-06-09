@@ -24,7 +24,7 @@ page 50100 "student registration details"
                 {
                     ToolTip = 'Specifies the value of the Full Name field.', Comment = '%';
                 }
-                field("Email Address "; Rec."Email Address ")
+                field("Email"; Rec."Email")
                 {
                     ToolTip = 'Specifies the value of the Email Address  field.', Comment = '%';
                 }
