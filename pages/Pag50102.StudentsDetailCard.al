@@ -50,22 +50,17 @@ page 50102 "Students Detail Card"
                 field("Email"; Rec."Email")
                 {
                     ToolTip = 'Specifies the value of the Email Address  field.', Comment = '%';
-                    trigger OnValidate()
-                    var
-                        StudentEmail: codeunit MyPublisher;
-                    begin
-                        StudentEmail.OnEmailAdd(Rec."Email");
-                    end;
+                    // trigger OnValidate()
+                    // var
+                    //     StudentEmail: codeunit MyPublisher;
+                    // begin
+                    //     StudentEmail.OnEmailAdd(Rec."Email");
+                    // end;
                 }
-                field("Mobile Phone"; Rec."Mobile Phone")
+                field("PhoneNumber"; Rec."PhoneNumber")
                 {
                     ToolTip = 'Specifies the value of the Mobile Phone field.', Comment = '%';
-                    trigger OnValidate()
-                    var
-                        StudentPhoneNumber: codeunit MyPublisher;
-                    begin
-                        StudentPhoneNumber.OnPhoneNumberAdd(rec."Mobile Phone");
-                    end;
+
                 }
                 field(City; Rec.City)
                 {

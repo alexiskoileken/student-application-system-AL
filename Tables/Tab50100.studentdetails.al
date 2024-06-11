@@ -62,9 +62,15 @@ table 50100 "student details"
         {
             Caption = 'Email Address ';
         }
-        field(9; "Mobile Phone"; Text[20])
+        field(9; "PhoneNumber"; Code[20])
         {
             Caption = 'Mobile Phone';
+            trigger OnValidate()
+            var
+                StudentPhoneNumber: codeunit MyPublisher;
+            begin
+                StudentPhoneNumber.OnPhoneNumberAdd(rec."PhoneNumber");
+            end;
         }
         field(10; City; Text[50])
         {
